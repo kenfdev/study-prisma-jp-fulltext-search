@@ -1,11 +1,11 @@
-FROM postgres:15
+FROM postgres:16
 
 # Install dependencies, download and install pg_bigm, configure PostgreSQL, and clean up
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     curl \
     libicu-dev \
-    postgresql-server-dev-15 \
+    postgresql-server-dev-16 \
     ca-certificates \
     && cd /tmp \
     # Download and extract pg_bigm
