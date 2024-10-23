@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:seed": "prisma db seed",
     "db:migrate": "prisma migrate dev",
-    "db:migrate:reset": "prisma migrate reset"
+    "db:migrate:reset": "prisma migrate reset",
+    "db:generate:sql": "prisma generate --sql",
+    "db:generate:sql:watch": "prisma generate --sql --watch"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,1 @@
+SELECT title FROM "Article" WHERE body LIKE likequery($1);
