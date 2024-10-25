@@ -1,6 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import { searchArticlesByBody } from '@prisma/client/sql';
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+  log: ['query']
+});
 
 export async function searchArticles(
   keyword1: string,
